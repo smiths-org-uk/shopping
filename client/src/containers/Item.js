@@ -17,7 +17,7 @@ const StyledTDCenter = styled(StyledTD)`
 
 const StyledQuantityInput = styled.input`
     font-size: 20px;
-    width: 50px;
+    width: 150px;
 `;
 
 const StyledTextInput = styled.textarea`

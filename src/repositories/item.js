@@ -1,10 +1,13 @@
-import items from '../data/items.json';
+import db from '../interfaces/db';
 
 const repository = {};
 
 repository.fetchAll = () => {
   return new Promise((resolve, reject) => {
-    resolve(items);
+    db.query('SELECT * FROM items ORDER BY regularity ASC, title ASC')
+      .then((results) => {
+        resolve(results);
+      })
   });
 };
 
