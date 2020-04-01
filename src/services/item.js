@@ -3,12 +3,15 @@ import itemRepository from '../repositories/item';
 const service = {};
 
 service.fetchAll = () => {
-  return new Promise((resolve, reject) => {
-    itemRepository.fetchAll()
-        .then((items) => {
-          resolve(items);
-        });
-  });
+  return itemRepository.fetchAll();
 };
+
+service.save = items => {
+  return itemRepository.save(items);
+}
+
+service.reset = () => {
+  return itemRepository.reset();
+}
 
 export default service;
