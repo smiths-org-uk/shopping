@@ -1,0 +1,5 @@
+client/node_modules/
+client/public/bundle.js
+client/public/bundle.js.gz
+server.js
+node_modules/
