@@ -1,6 +1,26 @@
 import React from 'react';
 import {Store} from '../redux/Store';
 import Actions from '../redux/Actions';
+import styled from 'styled-components';
+
+const StyledTD = styled.td`
+    padding: 10px 20px;
+`;
+
+const StyledTDQuantity = styled(StyledTD)`
+    text-align: center;
+`;
+
+const StyledNumberInput = styled.input`
+    font-size: 20px;
+    width: 50px;
+`;
+
+const StyledTextInput = styled.textarea`
+    width: calc(100% - 6px);
+    height: 80px;
+    font-size: 20px;
+`;
 
 export default class Item extends React.Component {
 
@@ -13,7 +33,7 @@ export default class Item extends React.Component {
     }
 
     updateItem(changedItem) {
-        Store.dispatch(Actions.setItem(this.props.key, changedItem));
+        Store.dispatch(Actions.setItem(this.props.index, changedItem));
     }
 
     onChangeQuantity(event) {
@@ -30,19 +50,25 @@ export default class Item extends React.Component {
 
     render() {
         return (
-            <div>
-                <input
-                    type='number'
-                    value={this.props.item.quantity}
-                    onChange={this.onChangeQuantity}
-                />
-                <span>{this.props.item.title}</span>
-                <input
-                    type='text'
-                    value={this.props.item.notes}
-                    onChange={this.onChangeNotes}
-                />
-            </div>
+            <tr>
+                <StyledTD>
+                    <span>{this.props.item.title}</span>
+                </StyledTD>
+                <StyledTDQuantity>
+                    <StyledNumberInput
+                        type='number'
+                        value={this.props.item.quantity}
+                        onChange={this.onChangeQuantity}
+                    />
+                </StyledTDQuantity>
+                <StyledTD>
+                    <StyledTextInput
+                        type='text'
+                        value={this.props.item.notes}
+                        onChange={this.onChangeNotes}
+                    />
+                </StyledTD>
+            </tr>
         )
     }
 }

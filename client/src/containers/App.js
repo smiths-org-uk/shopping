@@ -1,10 +1,18 @@
 import React from 'react';
+import styled from 'styled-components'
 import { Store } from '../redux/Store';
 import Middleware from '../redux/Middleware';
 import Title from '../components/Title';
 import SaveButton from '../components/SaveButton';
 import ResetButton from '../components/ResetButton';
-import ItemList from '../containers/ItemList';
+import ItemTable from './ItemTable';
+
+const StyledApp = styled.div`
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+`
 
 export default class App extends React.Component {
 
@@ -43,12 +51,16 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <StyledApp>
         <Title />
-        <SaveButton onSave={this.save} />
-        <ItemList items={this.state.items} />
-        <ResetButton onReset={this.reset} />
-      </div>
+        <ItemTable items={this.state.items} />
+        <div>
+          <SaveButton onSave={this.save} />
+        </div>
+        <div>
+          <ResetButton onReset={this.reset} />
+        </div>
+      </StyledApp>
     );
   }
 }
