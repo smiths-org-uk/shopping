@@ -39,4 +39,22 @@ export default class Middleware {
           }));
     };
   }
+
+  static saveItems(items) {
+    return (dispatch) => {
+      return httpCall('POST', `${API_SERVER}/save`, items)
+          .then((response) => response.json().then(() => {
+            dispatch(Middleware.fetchItems());
+          }));
+    };
+  }
+
+  static resetItems() {
+    return (dispatch) => {
+      return httpCall('POST', `${API_SERVER}/reset`)
+          .then((response) => response.json().then(() => {
+            dispatch(Middleware.fetchItems());
+          }));
+    };
+  }
 }
