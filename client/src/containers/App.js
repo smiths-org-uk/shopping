@@ -25,6 +25,8 @@ export default class App extends React.Component {
         items: Store.getState().items
       })
     })
+
+    Store.dispatch(Middleware.fetchItems());
   }
 
   componentWillUnmount() {

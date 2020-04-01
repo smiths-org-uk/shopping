@@ -1,4 +1,6 @@
-import { SET_ITEMS } from './Actions';
+import { 
+  SET_ITEMS, 
+  SET_ITEM } from './Actions';
 
 export const rootReducer = (state, action) => {
   return {
@@ -13,6 +15,9 @@ export const itemReducer = (itemsState, action) => {
   switch (action.type) {
     case SET_ITEMS:
       items = action.items;
+      break;
+    case SET_ITEM:
+      items[action.index] = action.item;
       break;
   }
 
