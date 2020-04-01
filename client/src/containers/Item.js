@@ -11,7 +11,7 @@ const StyledTD = styled.td`
     padding: 10px 20px;
 `;
 
-const StyledTDQuantity = styled(StyledTD)`
+const StyledTDCenter = styled(StyledTD)`
     text-align: center;
 `;
 
@@ -53,27 +53,44 @@ export default class Item extends React.Component {
     }
 
     render() {
+        let regularity;
+
+        switch (this.props.item.regularity) {
+            case 1:
+                regularity = "Weekly";
+                break;
+            case 2:
+                regularity = "Fortnightly";
+                break;
+            case 3:
+                regularity = "Monthly";
+                break;
+        }
+
         return (
             <StyledRow dark={!(this.props.index % 2)}>
                 <StyledTD>
                     <span>{this.props.item.title}</span>
                 </StyledTD>
-                <StyledTDQuantity>
+                <StyledTDCenter>
                     <StyledQuantityInput
                         type='text'
                         size='20'
                         value={this.props.item.quantity}
                         onChange={this.onChangeQuantity}
-                    />
-                </StyledTDQuantity>
+                        />
+                </StyledTDCenter>
                 <StyledTD>
                     <StyledTextInput
                         type='text'
                         maxlength='255'
                         value={this.props.item.notes}
                         onChange={this.onChangeNotes}
-                    />
+                        />
                 </StyledTD>
+                <StyledTDCenter>
+                    <span>{regularity}</span>
+                </StyledTDCenter>
             </StyledRow>
         )
     }

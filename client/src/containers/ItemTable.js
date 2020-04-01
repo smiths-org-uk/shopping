@@ -28,6 +28,7 @@ export default class ItemTable extends React.Component {
                         <StyledTH>Item</StyledTH>
                         <StyledTH>Quantity</StyledTH>
                         <StyledTH>Notes</StyledTH>
+                        <StyledTH>Regularity</StyledTH>
                     </StyledHeader>
                 </thead>
                 <tbody>

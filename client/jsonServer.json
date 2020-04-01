@@ -3,17 +3,20 @@
         {
             "title": "Chocolate",
             "quantity": 0,
-            "notes": ""
+            "notes": "",
+            "regularity": 1
         },
         {
             "title": "Cola",
             "quantity": 3,
-            "notes": ""
+            "notes": "",
+            "regularity": 2
         },
         {
             "title": "Biscuits",
             "quantity": 10,
-            "notes": ""
+            "notes": "",
+            "regularity": 3
         }
     ]
 }
