@@ -43,18 +43,18 @@ export default class Middleware {
   static saveItems(items) {
     return (dispatch) => {
       return httpCall('PUT', `${API_SERVER}/save`, items)
-          .then((response) => response.json().then(() => {
+          .then((response) => {
             dispatch(Middleware.fetchItems());
-          }));
+          });
     };
   }
 
   static resetItems() {
     return (dispatch) => {
       return httpCall('PUT', `${API_SERVER}/reset`)
-          .then((response) => response.json().then(() => {
+          .then((response) => {
             dispatch(Middleware.fetchItems());
-          }));
+          });
     };
   }
 }
