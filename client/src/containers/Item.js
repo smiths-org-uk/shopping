@@ -3,6 +3,10 @@ import {Store} from '../redux/Store';
 import Actions from '../redux/Actions';
 import styled from 'styled-components';
 
+const StyledRow = styled.tr`
+    background: ${props => props.dark ? "#eee" : "#fff"}
+`;
+
 const StyledTD = styled.td`
     padding: 10px 20px;
 `;
@@ -50,7 +54,7 @@ export default class Item extends React.Component {
 
     render() {
         return (
-            <tr>
+            <StyledRow dark={!(this.props.index % 2)}>
                 <StyledTD>
                     <span>{this.props.item.title}</span>
                 </StyledTD>
@@ -68,7 +72,7 @@ export default class Item extends React.Component {
                         onChange={this.onChangeNotes}
                     />
                 </StyledTD>
-            </tr>
+            </StyledRow>
         )
     }
 }

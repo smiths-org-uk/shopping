@@ -2,6 +2,11 @@ import React from 'react';
 import Item from './Item';
 import styled from 'styled-components';
 
+const StyledHeader = styled.tr`
+    background: black;
+    color: white;
+`;
+
 const StyledTable = styled.table`
     margin: 10px 0 30px 0;
     width: 100%;
@@ -19,11 +24,11 @@ export default class ItemTable extends React.Component {
         return (
             <StyledTable>
                 <thead>
-                    <tr>
+                    <StyledHeader>
                         <StyledTH>Item</StyledTH>
                         <StyledTH>Quantity</StyledTH>
                         <StyledTH>Notes</StyledTH>
-                    </tr>
+                    </StyledHeader>
                 </thead>
                 <tbody>
                 {
