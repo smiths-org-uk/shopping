@@ -15,7 +15,7 @@ const StyledTDQuantity = styled(StyledTD)`
     text-align: center;
 `;
 
-const StyledNumberInput = styled.input`
+const StyledQuantityInput = styled.input`
     font-size: 20px;
     width: 50px;
 `;
@@ -42,7 +42,7 @@ export default class Item extends React.Component {
 
     onChangeQuantity(event) {
         const item = this.props.item;
-        item.quantity = parseInt(event.target.value);
+        item.quantity = event.target.value;
         this.updateItem(item);
     }
 
@@ -59,8 +59,9 @@ export default class Item extends React.Component {
                     <span>{this.props.item.title}</span>
                 </StyledTD>
                 <StyledTDQuantity>
-                    <StyledNumberInput
-                        type='number'
+                    <StyledQuantityInput
+                        type='text'
+                        size='20'
                         value={this.props.item.quantity}
                         onChange={this.onChangeQuantity}
                     />
@@ -68,6 +69,7 @@ export default class Item extends React.Component {
                 <StyledTD>
                     <StyledTextInput
                         type='text'
+                        maxlength='255'
                         value={this.props.item.notes}
                         onChange={this.onChangeNotes}
                     />
