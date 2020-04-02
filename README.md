@@ -70,5 +70,5 @@ GRANT SELECT, UPDATE ON shopping.* TO 'shopping'@'cloudsqlproxy~%';
 ```
 
 ```bash
-kubectl -n smiths create secret generic shopping-cloudsql-proxy --from-file ./gke/harm-personal-projects-e69ed8ad2526.json
+kubectl -n smiths create secret generic shopping-cloudsql-proxy --from-file ./gke/credentials.json
 ```
