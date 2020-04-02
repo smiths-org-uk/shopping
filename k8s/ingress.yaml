@@ -8,7 +8,6 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: "nginx"
     kubernetes.io/tls-acme: "true"
-    cert-manager.io/issuer: letsencrypt
 spec:
   rules:
   - host: {{.INGRESS_HOST}}
@@ -18,7 +17,3 @@ spec:
           backend:
             serviceName: {{.APP_NAME}}
             servicePort: 80
-  tls:
-  - hosts:
-    - scribbles.harmelodic.com
-    secretName: tls-cert-scribbles-harmelodic
