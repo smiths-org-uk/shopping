@@ -11,11 +11,11 @@ const StyledTable = styled.table`
     margin: 10px 0 30px 0;
     width: 100%;
     text-align: left;
-    font-size: 20px;
+    font-size: 12px;
 `;
 
 const StyledTH = styled.th`
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-align: center;
 `;
 

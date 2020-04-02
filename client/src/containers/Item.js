@@ -8,7 +8,7 @@ const StyledRow = styled.tr`
 `;
 
 const StyledTD = styled.td`
-    padding: 10px 20px;
+    padding: 1px 20px;
 `;
 
 const StyledTDCenter = styled(StyledTD)`
@@ -16,14 +16,14 @@ const StyledTDCenter = styled(StyledTD)`
 `;
 
 const StyledQuantityInput = styled.input`
-    font-size: 20px;
+    font-size: 12px;
     width: 150px;
 `;
 
 const StyledTextInput = styled.textarea`
     width: calc(100% - 6px);
-    height: 80px;
-    font-size: 20px;
+    height: 16px;
+    font-size: 12px;
 `;
 
 export default class Item extends React.Component {
