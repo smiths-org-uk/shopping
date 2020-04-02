@@ -11,17 +11,27 @@ repository.fetchAll = () => {
   });
 };
 
-repository.save = (items) => {
+repository.save = items => {
   return new Promise((resolve, reject) => {
-    // Save
-    resolve();
+    const promises = [];
+
+    items.forEach(item => {
+      promises.push(db.query(`UPDATE items SET quantity = '${item.quantity}', notes = '${item.notes}' WHERE title = '${item.title}'`))
+    });
+
+    Promise.all(promises)
+      .then(() => {
+        resolve();
+      })
   });
 };
 
 repository.reset = () => {
   return new Promise((resolve, reject) => {
-    // Reset
-    resolve();
+    db.query(`UPDATE items SET quantity = '0', notes = ''`)
+      .then(() => {
+        resolve();
+      })
   });
 };
 

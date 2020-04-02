@@ -7,11 +7,23 @@ service.fetchAll = () => {
 };
 
 service.save = items => {
-  return itemRepository.save(items);
+  return new Promise((resolve, reject) => {
+    itemRepository.save(items)
+      .then(() => {
+        // Send email
+        resolve()
+      });
+  });
 }
 
 service.reset = () => {
-  return itemRepository.reset();
+  return new Promise((resolve, reject) => {
+    itemRepository.reset()
+      .then(() => {
+        // Send email
+        resolve()
+      });
+  });
 }
 
 export default service;
