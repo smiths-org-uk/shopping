@@ -36,15 +36,22 @@ export default class Middleware {
       return httpCall('GET', `${API_SERVER}/items`)
           .then((response) => response.json().then((data) => {
             dispatch(Actions.setItems(data));
-          }));
+          }))
+          .catch(() => {
+            alert("ERROR FETCHING SHOPPING LIST. Contact Graham.")
+          });
     };
   }
 
   static saveItems(items) {
     return (dispatch) => {
       return httpCall('PUT', `${API_SERVER}/save`, items)
-          .then((response) => {
+          .then(() => {
             dispatch(Middleware.fetchItems());
+            alert("SHOPPING SAVED!");
+          })
+          .catch(() => {
+            alert("ERROR SAVING SHOPPING. Contact Graham.")
           });
     };
   }
@@ -52,8 +59,12 @@ export default class Middleware {
   static resetItems() {
     return (dispatch) => {
       return httpCall('PUT', `${API_SERVER}/reset`)
-          .then((response) => {
+          .then(() => {
             dispatch(Middleware.fetchItems());
+            alert("SHOPPING RESET!");
+          })
+          .catch(() => {
+            alert("ERROR RESETTING SHOPPING. Contact Graham.")
           });
     };
   }
