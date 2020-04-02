@@ -62,3 +62,9 @@ INSERT INTO items VALUES ('Salt', '1 pack', '', 3);
 INSERT INTO items VALUES ('Cod liver oil capsules', '1 pack', '', 3);
 INSERT INTO items VALUES ('Cif cream cleaner', '1 bottle', '', 3);
 ```
+
+```sql
+CREATE USER 'shopping'@'cloudsqlproxy~%' IDENTIFIED BY '';
+
+GRANT SELECT, UPDATE ON shopping.* TO 'shopping'@'cloudsqlproxy~%';
+```
