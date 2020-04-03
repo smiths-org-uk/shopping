@@ -8,7 +8,7 @@ const StyledRow = styled.tr`
 `;
 
 const StyledTD = styled.td`
-    padding: 1px 20px;
+    padding: 1px 10px;
 `;
 
 const StyledTDCenter = styled(StyledTD)`
@@ -16,14 +16,19 @@ const StyledTDCenter = styled(StyledTD)`
 `;
 
 const StyledQuantityInput = styled.input`
+    min-width: 80px;
+    width: calc(100% - 6px);
     font-size: 12px;
-    width: 150px;
 `;
 
 const StyledTextInput = styled.textarea`
     width: calc(100% - 6px);
     height: 16px;
     font-size: 12px;
+`;
+
+const StyledFaint = styled.span`
+    color: #aaa;
 `;
 
 export default class Item extends React.Component {
@@ -57,20 +62,20 @@ export default class Item extends React.Component {
 
         switch (this.props.item.regularity) {
             case 1:
-                regularity = "Weekly";
+                regularity = "Frequent";
                 break;
             case 2:
-                regularity = "Fortnightly";
+                regularity = "Not-so-frequent";
                 break;
             case 3:
-                regularity = "Monthly";
+                regularity = "Occasionally";
                 break;
         }
 
         return (
             <StyledRow dark={!(this.props.index % 2)}>
                 <StyledTD>
-                    <span>{this.props.item.title}</span>
+                    {this.props.item.title}<StyledFaint> - ({this.props.item.category})</StyledFaint>
                 </StyledTD>
                 <StyledTDCenter>
                     <StyledQuantityInput
@@ -81,9 +86,9 @@ export default class Item extends React.Component {
                         />
                 </StyledTDCenter>
                 <StyledTD>
-                    <StyledTextInput
+                    <StyledQuantityInput
                         type='text'
-                        maxlength='255'
+                        size='255'
                         value={this.props.item.notes}
                         onChange={this.onChangeNotes}
                         />

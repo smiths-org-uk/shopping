@@ -9,7 +9,7 @@ import ItemTable from './ItemTable';
 
 const StyledApp = styled.div`
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
 `

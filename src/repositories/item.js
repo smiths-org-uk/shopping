@@ -4,7 +4,7 @@ const repository = {};
 
 repository.fetchAll = () => {
   return new Promise((resolve, reject) => {
-    db.query('SELECT * FROM items ORDER BY regularity ASC, title ASC')
+    db.query('SELECT * FROM items ORDER BY regularity ASC, category ASC, title ASC')
       .then((results) => {
         resolve(results);
       })

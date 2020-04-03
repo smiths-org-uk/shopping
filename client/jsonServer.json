@@ -1,262 +1,305 @@
 {
     "items": [
         {
-            "title": "Avocado",
-            "quantity": "1",
-            "notes": "",
-            "regularity": 1
-        },
-        {
-            "title": "Banana(s)",
-            "quantity": "2",
-            "notes": "",
-            "regularity": 1
-        },
-        {
             "title": "Bio Yoghurt",
             "quantity": "2 Large Pots",
             "notes": "",
-            "regularity": 1
+            "regularity": 1,
+            "category": "dairy"
         },
         {
             "title": "Butter",
             "quantity": "Half a lb",
             "notes": "",
-            "regularity": 1
-        },
-        {
-            "title": "Cholesterol Lowering Drinks",
-            "quantity": "1 pack",
-            "notes": "",
-            "regularity": 1
-        },
-        {
-            "title": "Crumpets",
-            "quantity": "1 pack",
-            "notes": "",
-            "regularity": 1
-        },
-        {
-            "title": "Easy-peel Oranges",
-            "quantity": "3",
-            "notes": "",
-            "regularity": 1
-        },
-        {
-            "title": "Ginger Ale Mini Cans",
-            "quantity": "1 pack",
-            "notes": "",
-            "regularity": 1
-        },
-        {
-            "title": "Malt Loaf",
-            "quantity": "1",
-            "notes": "",
-            "regularity": 1
-        },
-        {
-            "title": "Ready Meals for 1",
-            "quantity": "2",
-            "notes": "",
-            "regularity": 1
-        },
-        {
-            "title": "Red Grapes",
-            "quantity": "1 pack",
-            "notes": "",
-            "regularity": 1
-        },
-        {
-            "title": "RTE plums",
-            "quantity": "1 pack",
-            "notes": "",
-            "regularity": 1
+            "regularity": 1,
+            "category": "dairy"
         },
         {
             "title": "Semi-skimmed Milk",
             "quantity": "1 pint",
             "notes": "",
-            "regularity": 1
-        },
-        {
-            "title": "Sliced Wholemeal Loaf",
-            "quantity": "1 small",
-            "notes": "",
-            "regularity": 1
-        },
-        {
-            "title": "Soda Water",
-            "quantity": "2 Bottles",
-            "notes": "",
-            "regularity": 1
+            "regularity": 1,
+            "category": "dairy"
         },
         {
             "title": "Whole Milk",
             "quantity": "2 pints",
             "notes": "",
-            "regularity": 1
+            "regularity": 1,
+            "category": "dairy"
         },
         {
-            "title": "Anti histamine tablets",
+            "title": "Cholesterol Lowering Drinks",
             "quantity": "1 pack",
             "notes": "",
-            "regularity": 2
+            "regularity": 1,
+            "category": "drinks"
         },
         {
-            "title": "Bacon",
-            "quantity": "Half a lb",
-            "notes": "Dry cured, unsmoked",
-            "regularity": 2
-        },
-        {
-            "title": "Blackcurrent Jam",
-            "quantity": "1 jar",
+            "title": "Ginger Ale Mini Cans",
+            "quantity": "1 pack",
             "notes": "",
-            "regularity": 2
+            "regularity": 1,
+            "category": "drinks"
+        },
+        {
+            "title": "Soda Water",
+            "quantity": "2 Bottles",
+            "notes": "",
+            "regularity": 1,
+            "category": "drinks"
+        },
+        {
+            "title": "Crumpets",
+            "quantity": "1 pack",
+            "notes": "",
+            "regularity": 1,
+            "category": "dry goods"
+        },
+        {
+            "title": "Malt Loaf",
+            "quantity": "1",
+            "notes": "",
+            "regularity": 1,
+            "category": "dry goods"
+        },
+        {
+            "title": "Sliced Wholemeal Loaf",
+            "quantity": "1 small",
+            "notes": "",
+            "regularity": 1,
+            "category": "dry goods"
+        },
+        {
+            "title": "Avocado",
+            "quantity": "1",
+            "notes": "",
+            "regularity": 1,
+            "category": "fruit and veg"
+        },
+        {
+            "title": "Banana(s)",
+            "quantity": "2",
+            "notes": "",
+            "regularity": 1,
+            "category": "fruit and veg"
+        },
+        {
+            "title": "Easy-peel Oranges",
+            "quantity": "3",
+            "notes": "",
+            "regularity": 1,
+            "category": "fruit and veg"
+        },
+        {
+            "title": "Red Grapes",
+            "quantity": "1 pack",
+            "notes": "",
+            "regularity": 1,
+            "category": "fruit and veg"
+        },
+        {
+            "title": "RTE plums",
+            "quantity": "1 pack",
+            "notes": "",
+            "regularity": 1,
+            "category": "fruit and veg"
+        },
+        {
+            "title": "Ready Meals for 1",
+            "quantity": "2",
+            "notes": "",
+            "regularity": 1,
+            "category": "ready meal"
         },
         {
             "title": "Cheddar Cheese",
             "quantity": "1 pack",
             "notes": "",
-            "regularity": 2
-        },
-        {
-            "title": "Condensed Chicken / Mushrrom Soup",
-            "quantity": "A few tins",
-            "notes": "",
-            "regularity": 2
-        },
-        {
-            "title": "Instant Coffee",
-            "quantity": "1 jar",
-            "notes": "Not decaf",
-            "regularity": 2
-        },
-        {
-            "title": "Kitchen Paper",
-            "quantity": "1 pack",
-            "notes": "",
-            "regularity": 2
+            "regularity": 2,
+            "category": "dairy"
         },
         {
             "title": "Large Eggs",
             "quantity": "6",
             "notes": "",
-            "regularity": 2
-        },
-        {
-            "title": "Onions",
-            "quantity": "3 or 4",
-            "notes": "",
-            "regularity": 2
-        },
-        {
-            "title": "Pork Sausages",
-            "quantity": "1 pack",
-            "notes": "",
-            "regularity": 2
-        },
-        {
-            "title": "Toilet rolls",
-            "quantity": "1 pack",
-            "notes": "",
-            "regularity": 2
-        },
-        {
-            "title": "Toothpaste",
-            "quantity": "1 tube",
-            "notes": "",
-            "regularity": 2
-        },
-        {
-            "title": "Washing Up Liquid",
-            "quantity": "1 bottle",
-            "notes": "",
-            "regularity": 2
-        },
-        {
-            "title": "Weetabix",
-            "quantity": "1 pack",
-            "notes": "",
-            "regularity": 2
+            "regularity": 2,
+            "category": "dairy"
         },
         {
             "title": "Whisky",
             "quantity": "1 litre",
             "notes": "",
-            "regularity": 2
+            "regularity": 2,
+            "category": "drinks"
         },
         {
-            "title": "Bleach",
+            "title": "Instant Coffee",
+            "quantity": "1 jar",
+            "notes": "Not decaf",
+            "regularity": 2,
+            "category": "dry goods"
+        },
+        {
+            "title": "Weetabix",
+            "quantity": "1 pack",
+            "notes": "",
+            "regularity": 2,
+            "category": "dry goods"
+        },
+        {
+            "title": "Onions",
+            "quantity": "3 or 4",
+            "notes": "",
+            "regularity": 2,
+            "category": "fruit and veg"
+        },
+        {
+            "title": "Bacon",
+            "quantity": "Half a lb",
+            "notes": "Dry cured, unsmoked",
+            "regularity": 2,
+            "category": "meat"
+        },
+        {
+            "title": "Pork Sausages",
+            "quantity": "1 pack",
+            "notes": "",
+            "regularity": 2,
+            "category": "meat"
+        },
+        {
+            "title": "Anti histamine tablets",
+            "quantity": "1 pack",
+            "notes": "",
+            "regularity": 2,
+            "category": "medical"
+        },
+        {
+            "title": "Condensed Chicken / Mushrrom Soup",
+            "quantity": "A few tins",
+            "notes": "",
+            "regularity": 2,
+            "category": "tinned"
+        },
+        {
+            "title": "Blackcurrent Jam",
+            "quantity": "1 jar",
+            "notes": "",
+            "regularity": 2,
+            "category": "toiletries"
+        },
+        {
+            "title": "Kitchen Paper",
+            "quantity": "1 pack",
+            "notes": "",
+            "regularity": 2,
+            "category": "toiletries"
+        },
+        {
+            "title": "Toilet rolls",
+            "quantity": "1 pack",
+            "notes": "",
+            "regularity": 2,
+            "category": "toiletries"
+        },
+        {
+            "title": "Toothpaste",
+            "quantity": "1 tube",
+            "notes": "",
+            "regularity": 2,
+            "category": "toiletries"
+        },
+        {
+            "title": "Washing Up Liquid",
             "quantity": "1 bottle",
             "notes": "",
-            "regularity": 3
+            "regularity": 2,
+            "category": "toiletries"
         },
         {
             "title": "Cereals",
             "quantity": "1 pack",
             "notes": "",
-            "regularity": 3
-        },
-        {
-            "title": "Cif cream cleaner",
-            "quantity": "1 bottle",
-            "notes": "",
-            "regularity": 3
-        },
-        {
-            "title": "Cod liver oil capsules",
-            "quantity": "1 pack",
-            "notes": "",
-            "regularity": 3
-        },
-        {
-            "title": "Flash",
-            "quantity": "1 bottle",
-            "notes": "",
-            "regularity": 3
+            "regularity": 3,
+            "category": "dry goods"
         },
         {
             "title": "Flour",
             "quantity": "1 pack",
             "notes": "",
-            "regularity": 3
-        },
-        {
-            "title": "Frozen Peas",
-            "quantity": "1 pack",
-            "notes": "",
-            "regularity": 3
-        },
-        {
-            "title": "Ice cream",
-            "quantity": "1 pack",
-            "notes": "",
-            "regularity": 3
+            "regularity": 3,
+            "category": "dry goods"
         },
         {
             "title": "Pasta",
             "quantity": "1 pack",
             "notes": "",
-            "regularity": 3
+            "regularity": 3,
+            "category": "dry goods"
         },
         {
             "title": "Rice",
             "quantity": "1 pack",
             "notes": "",
-            "regularity": 3
+            "regularity": 3,
+            "category": "dry goods"
         },
         {
             "title": "Salt",
             "quantity": "1 pack",
             "notes": "",
-            "regularity": 3
+            "regularity": 3,
+            "category": "dry goods"
         },
         {
             "title": "Sugar",
             "quantity": "1 pack",
             "notes": "",
-            "regularity": 3
+            "regularity": 3,
+            "category": "dry goods"
+        },
+        {
+            "title": "Frozen Peas",
+            "quantity": "1 pack",
+            "notes": "",
+            "regularity": 3,
+            "category": "frozen"
+        },
+        {
+            "title": "Ice cream",
+            "quantity": "1 pack",
+            "notes": "",
+            "regularity": 3,
+            "category": "frozen"
+        },
+        {
+            "title": "Cod liver oil capsules",
+            "quantity": "1 pack",
+            "notes": "",
+            "regularity": 3,
+            "category": "medical"
+        },
+        {
+            "title": "Bleach",
+            "quantity": "1 bottle",
+            "notes": "",
+            "regularity": 3,
+            "category": "toiletries"
+        },
+        {
+            "title": "Cif cream cleaner",
+            "quantity": "1 bottle",
+            "notes": "",
+            "regularity": 3,
+            "category": "toiletries"
+        },
+        {
+            "title": "Flash",
+            "quantity": "1 bottle",
+            "notes": "",
+            "regularity": 3,
+            "category": "toiletries"
         }
     ]
 }
