@@ -15,8 +15,7 @@ const StyledTDCenter = styled(StyledTD)`
     text-align: center;
 `;
 
-const StyledQuantityInput = styled.input`
-    min-width: 80px;
+const StyledTextInput = styled.input`
     width: calc(100% - 6px);
     font-size: 12px;
 `;
@@ -74,13 +73,13 @@ export default class Item extends React.Component {
         return (
             <StyledRow dark={!(this.props.index % 2)}>
                 <StyledTDCenter>
-                    <span>{regularity}</span>
+                    {regularity}
                 </StyledTDCenter>
                 <StyledTD>
                     {this.props.item.title}<StyledFaint> - {this.props.item.category}</StyledFaint>
                 </StyledTD>
                 <StyledTDCenter>
-                    <StyledQuantityInput
+                    <StyledTextInput
                         type='text'
                         maxLength='20'
                         value={this.props.item.quantity}
@@ -88,7 +87,7 @@ export default class Item extends React.Component {
                         />
                 </StyledTDCenter>
                 <StyledTD>
-                    <StyledQuantityInput
+                    <StyledTextInput
                         type='text'
                         maxLength='255'
                         value={this.props.item.notes}

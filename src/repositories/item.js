@@ -28,7 +28,7 @@ repository.save = items => {
 
 repository.reset = () => {
   return new Promise((resolve, reject) => {
-    db.query(`UPDATE items SET quantity = '0', notes = ''`)
+    db.query(`UPDATE items SET quantity = '', notes = ''`)
       .then(() => {
         resolve();
       })
