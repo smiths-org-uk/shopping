@@ -82,7 +82,7 @@ export default class Item extends React.Component {
                 <StyledTDCenter>
                     <StyledQuantityInput
                         type='text'
-                        maxlength='20'
+                        maxLength='20'
                         value={this.props.item.quantity}
                         onChange={this.onChangeQuantity}
                         />
@@ -90,7 +90,7 @@ export default class Item extends React.Component {
                 <StyledTD>
                     <StyledQuantityInput
                         type='text'
-                        maxlength='255'
+                        maxLength='255'
                         value={this.props.item.notes}
                         onChange={this.onChangeNotes}
                         />
