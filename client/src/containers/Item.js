@@ -66,6 +66,9 @@ export default class Item extends React.Component {
             case 3:
                 regularity = "Occasionally";
                 break;
+            default:
+                regularity = "";
+                break;
         }
 
         return (
