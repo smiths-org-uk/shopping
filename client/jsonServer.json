@@ -2,297 +2,325 @@
     "items": [
         {
             "title": "Bio Yoghurt (450g pot)",
-            "quantity": "2 Large Pots",
+            "quantity": "0",
             "notes": "",
             "regularity": 1,
             "category": "dairy"
         },
         {
             "title": "Butter (250g)",
-            "quantity": "Half a lb",
+            "quantity": "0",
             "notes": "",
             "regularity": 1,
             "category": "dairy"
         },
         {
             "title": "Milk - Semi-skimmed (2pt)",
-            "quantity": "1 pint",
+            "quantity": "0",
             "notes": "",
             "regularity": 1,
             "category": "dairy"
         },
         {
             "title": "Milk - Whole (2pt)",
-            "quantity": "2 pints",
+            "quantity": "0",
             "notes": "",
             "regularity": 1,
             "category": "dairy"
         },
         {
+            "title": "Cholesterol Lowering Drinks (6pk)",
+            "quantity": "0",
+            "notes": "",
+            "regularity": 1,
+            "category": "drinks"
+        },
+        {
             "title": "Schweppes Ginger Ale (12x150ml)",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 1,
             "category": "drinks"
         },
         {
             "title": "Soda Water (1L)",
-            "quantity": "2 Bottles",
+            "quantity": "0",
             "notes": "",
             "regularity": 1,
             "category": "drinks"
         },
         {
             "title": "Bread - Wholemeal sliced (sm)",
-            "quantity": "1 small",
+            "quantity": "0",
             "notes": "",
             "regularity": 1,
             "category": "dry goods"
         },
         {
             "title": "Crumpets (6pk)",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 1,
             "category": "dry goods"
         },
         {
             "title": "Malt Loaf (260g)",
-            "quantity": "1",
+            "quantity": "0",
             "notes": "",
             "regularity": 1,
             "category": "dry goods"
         },
         {
             "title": "Avocado (lg)",
-            "quantity": "1",
+            "quantity": "0",
             "notes": "",
             "regularity": 1,
             "category": "fruit and veg"
         },
         {
             "title": "Bananas (indv)",
-            "quantity": "2",
+            "quantity": "0",
             "notes": "",
             "regularity": 1,
             "category": "fruit and veg"
         },
         {
             "title": "Grapes (80g pk)",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 1,
             "category": "fruit and veg"
         },
         {
             "title": "Oranges - easy peel",
-            "quantity": "3",
+            "quantity": "0",
             "notes": "",
             "regularity": 1,
             "category": "fruit and veg"
         },
         {
             "title": "Plums - ready-to-eat (400g pk)",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 1,
             "category": "fruit and veg"
         },
         {
             "title": "Ready Meals for 1",
-            "quantity": "2",
+            "quantity": "0",
             "notes": "",
             "regularity": 1,
             "category": "ready meal"
         },
         {
-            "title": "Washing Up Liquid",
-            "quantity": "1 bottle",
+            "title": "Cheese - Cheddar (350g-ish)",
+            "quantity": "0",
             "notes": "",
             "regularity": 2,
-            "category": "cleaning"
+            "category": "dairy"
         },
         {
             "title": "Eggs x6 (v.lg)",
-            "quantity": "6",
+            "quantity": "0",
             "notes": "",
             "regularity": 2,
             "category": "dairy"
         },
         {
             "title": "Whisky (1L)",
-            "quantity": "1 litre",
+            "quantity": "0",
             "notes": "",
             "regularity": 2,
             "category": "drinks"
         },
         {
             "title": "Coffee - Instant (100g jar)",
-            "quantity": "1 jar",
-            "notes": "Not decaf",
+            "quantity": "0",
+            "notes": "",
             "regularity": 2,
             "category": "dry goods"
         },
         {
             "title": "Weetabix (24 pk)",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 2,
             "category": "dry goods"
         },
         {
             "title": "Yorkshire Teabags (160 box)",
-            "quantity": "1 jar",
-            "notes": "Not decaf",
+            "quantity": "0",
+            "notes": "",
             "regularity": 2,
             "category": "dry goods"
         },
         {
             "title": "Onions (indv)",
-            "quantity": "3 or 4",
+            "quantity": "0",
             "notes": "",
             "regularity": 2,
             "category": "fruit and veg"
         },
         {
             "title": "Bacon - back, dry cured (300g)",
-            "quantity": "Half a lb",
-            "notes": "Dry cured, unsmoked",
+            "quantity": "0",
+            "notes": "",
             "regularity": 2,
             "category": "meat"
         },
         {
             "title": "Pork Suasages (400g)",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 2,
             "category": "meat"
         },
         {
             "title": "Anti-histamine tablets",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 2,
             "category": "medical"
         },
         {
             "title": "Soup - c.chick/c.o.mushroom (400g tin)",
-            "quantity": "A few tins",
+            "quantity": "0",
             "notes": "",
             "regularity": 2,
             "category": "tinned"
         },
         {
             "title": "Blackcurrant Jam (jar)",
-            "quantity": "1 jar",
+            "quantity": "0",
             "notes": "",
             "regularity": 2,
             "category": "toiletries"
         },
         {
             "title": "Kitchen Roll",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 2,
             "category": "toiletries"
         },
         {
             "title": "Toilet Roll",
-            "quantity": "1 pack",
-            "notes": "",
-            "regularity": 2,
-            "category": "toiletries"
-        },
-        {
-            "title": "Toothpaste",
-            "quantity": "1 tube",
+            "quantity": "0",
             "notes": "",
             "regularity": 2,
             "category": "toiletries"
         },
         {
             "title": "Bleach",
-            "quantity": "1 bottle",
+            "quantity": "0",
             "notes": "",
             "regularity": 3,
             "category": "cleaning"
         },
         {
             "title": "Cif Cream Cleaner",
-            "quantity": "1 bottle",
+            "quantity": "0",
             "notes": "",
             "regularity": 3,
             "category": "cleaning"
         },
         {
             "title": "Flash",
-            "quantity": "1 bottle",
+            "quantity": "0",
+            "notes": "",
+            "regularity": 3,
+            "category": "cleaning"
+        },
+        {
+            "title": "Washing Up Liquid",
+            "quantity": "0",
             "notes": "",
             "regularity": 3,
             "category": "cleaning"
         },
         {
             "title": "Flour - Plain",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 3,
             "category": "dry goods"
         },
         {
             "title": "Flour - Self-Raising",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 3,
             "category": "dry goods"
         },
         {
             "title": "Pasta",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 3,
             "category": "dry goods"
         },
         {
             "title": "Rice",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 3,
             "category": "dry goods"
         },
         {
             "title": "Salt",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 3,
             "category": "dry goods"
         },
         {
             "title": "Sugar",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 3,
             "category": "dry goods"
         },
         {
             "title": "Ice cream (tub?)",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 3,
             "category": "frozen"
         },
         {
             "title": "Peas - frozen (bag?)",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 3,
             "category": "frozen"
         },
         {
             "title": "Cod Liver Oil (1000mg max)",
-            "quantity": "1 pack",
+            "quantity": "0",
             "notes": "",
             "regularity": 3,
             "category": "medical"
+        },
+        {
+            "title": "Toothpaste",
+            "quantity": "0",
+            "notes": "",
+            "regularity": 3,
+            "category": "toiletries"
+        },
+        {
+            "title": "Other #1",
+            "quantity": "0",
+            "notes": "",
+            "regularity": 4,
+            "category": "other"
+        },
+        {
+            "title": "Other #2",
+            "quantity": "0",
+            "notes": "",
+            "regularity": 4,
+            "category": "other"
         }
     ]
 }

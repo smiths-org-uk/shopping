@@ -3,15 +3,18 @@ import {Store} from '../redux/Store';
 import Actions from '../redux/Actions';
 import styled from 'styled-components';
 
-const StyledRow = styled.tr`
+const StyledItemRow = styled.div`
+    width: 100%;
     background: ${props => props.dark ? "#eee" : "#fff"}
 `;
 
-const StyledTD = styled.td`
-    padding: 1px 10px;
+const StyledSection = styled.div`
+    display: inline-block;
+    width: calc(${props => props.width} - 20px);
+    padding: 3px 10px;
 `;
 
-const StyledTDCenter = styled(StyledTD)`
+const StyledSectionCentered = styled(StyledSection)`
     text-align: center;
 `;
 
@@ -71,30 +74,30 @@ export default class Item extends React.Component {
         }
 
         return (
-            <StyledRow dark={!(this.props.index % 2)}>
-                <StyledTDCenter>
+            <StyledItemRow dark={!(this.props.index % 2)}>
+                <StyledSectionCentered width={this.props.regularityWidth}>
                     {regularity}
-                </StyledTDCenter>
-                <StyledTD>
+                </StyledSectionCentered>
+                <StyledSection width={this.props.titleWidth}>
                     {this.props.item.title}<StyledFaint> - {this.props.item.category}</StyledFaint>
-                </StyledTD>
-                <StyledTDCenter>
+                </StyledSection>
+                <StyledSectionCentered width={this.props.quantityWidth}>
                     <StyledTextInput
                         type='text'
                         maxLength='20'
                         value={this.props.item.quantity}
                         onChange={this.onChangeQuantity}
                         />
-                </StyledTDCenter>
-                <StyledTD>
+                </StyledSectionCentered>
+                <StyledSection width={this.props.notesWidth}>
                     <StyledTextInput
                         type='text'
                         maxLength='255'
                         value={this.props.item.notes}
                         onChange={this.onChangeNotes}
                         />
-                </StyledTD>
-            </StyledRow>
+                </StyledSection>
+            </StyledItemRow>
         )
     }
 }
