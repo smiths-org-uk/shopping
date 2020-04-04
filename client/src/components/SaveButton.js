@@ -24,7 +24,9 @@ const StyledSaveButton = styled.div`
 export default class SaveButton extends React.Component {
     render() {
         return (
-            <StyledSaveButton onClick={this.props.onSave}>Save</StyledSaveButton>
+            <div>
+                <StyledSaveButton onClick={this.props.onSave}>Save</StyledSaveButton>
+            </div>
         )
     }
 }

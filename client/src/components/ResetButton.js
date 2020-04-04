@@ -24,7 +24,9 @@ const StyledSaveButton = styled.div`
 export default class ResetButton extends React.Component {
     render() {
         return (
-            <StyledSaveButton onClick={this.props.onReset}>Reset</StyledSaveButton>
+            <div>
+                <StyledSaveButton onClick={this.props.onReset}>Reset</StyledSaveButton>
+            </div>
         )
     }
 }

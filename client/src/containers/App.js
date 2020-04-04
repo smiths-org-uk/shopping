@@ -14,6 +14,11 @@ const StyledApp = styled.div`
     text-align: center;
 `
 
+const StyledFooter = styled.div`
+    font-size: 12px;
+    margin-bottom: 10px;
+`
+
 export default class App extends React.Component {
 
   constructor(props) {
@@ -54,12 +59,11 @@ export default class App extends React.Component {
       <StyledApp>
         <Title />
         <ItemTable items={this.state.items} />
-        <div>
-          <SaveButton onSave={this.save} />
-        </div>
-        <div>
-          <ResetButton onReset={this.reset} />
-        </div>
+        <SaveButton onSave={this.save} />
+        <ResetButton onReset={this.reset} />
+        <StyledFooter>
+          Developed by Matt Smith, BSc. Hons.
+        </StyledFooter>
       </StyledApp>
     );
   }
