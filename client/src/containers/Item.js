@@ -21,14 +21,10 @@ const StyledQuantityInput = styled.input`
     font-size: 12px;
 `;
 
-const StyledTextInput = styled.textarea`
-    width: calc(100% - 6px);
-    height: 16px;
-    font-size: 12px;
-`;
-
 const StyledFaint = styled.span`
     color: #aaa;
+    font-style: italic;
+    font-size: 10px;
 `;
 
 export default class Item extends React.Component {
@@ -74,8 +70,11 @@ export default class Item extends React.Component {
 
         return (
             <StyledRow dark={!(this.props.index % 2)}>
+                <StyledTDCenter>
+                    <span>{regularity}</span>
+                </StyledTDCenter>
                 <StyledTD>
-                    {this.props.item.title}<StyledFaint> - ({this.props.item.category})</StyledFaint>
+                    {this.props.item.title}<StyledFaint> - {this.props.item.category}</StyledFaint>
                 </StyledTD>
                 <StyledTDCenter>
                     <StyledQuantityInput
@@ -93,9 +92,6 @@ export default class Item extends React.Component {
                         onChange={this.onChangeNotes}
                         />
                 </StyledTD>
-                <StyledTDCenter>
-                    <span>{regularity}</span>
-                </StyledTDCenter>
             </StyledRow>
         )
     }

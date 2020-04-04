@@ -25,10 +25,10 @@ export default class ItemTable extends React.Component {
             <StyledTable>
                 <thead>
                     <StyledHeader>
+                        <StyledTH>Regularity</StyledTH>
                         <StyledTH>Item</StyledTH>
                         <StyledTH>Quantity</StyledTH>
                         <StyledTH>Notes</StyledTH>
-                        <StyledTH>Regularity</StyledTH>
                     </StyledHeader>
                 </thead>
                 <tbody>
