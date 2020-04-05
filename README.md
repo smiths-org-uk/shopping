@@ -43,7 +43,7 @@ INSERT INTO items VALUES ('Bacon - back, dry cured (300g)', '0', '', 2, 'meat');
 INSERT INTO items VALUES ('Pork Suasages (400g)', '0', '', 2, 'meat');
 INSERT INTO items VALUES ('Onions (indv)', '0', '', 2, 'fruit and veg');
 INSERT INTO items VALUES ('Soup - c.chick/c.o.mushroom (400g tin)', '0', '', 2, 'tinned');
-INSERT INTO items VALUES ('Blackcurrant Jam (jar)', '0', '', 2, 'toiletries');
+INSERT INTO items VALUES ('Blackcurrant Jam (jar)', '0', '', 2, 'preserves');
 INSERT INTO items VALUES ('Weetabix (24 pk)', '0', '', 2, 'dry goods');
 INSERT INTO items VALUES ('Kitchen Roll', '0', '', 2, 'toiletries');
 INSERT INTO items VALUES ('Toilet Roll', '0', '', 2, 'toiletries');
