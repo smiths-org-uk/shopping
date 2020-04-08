@@ -1,4 +1,4 @@
-import sql from './sql';
+import {sql} from '@harmelodic/interfaces';
 
 export default sql({
     host: '127.0.0.1',

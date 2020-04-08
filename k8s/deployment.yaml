@@ -20,6 +20,26 @@ spec:
         env:
           - name: PORT
             value: "80"
+          - name: MAIL_SERVER
+            valueFrom:
+              configMapKeyRef:
+                name: mail
+                key: server
+          - name: MAIL_USERNAME
+            valueFrom:
+              configMapKeyRef:
+                name: mail
+                key: username
+          - name: MAIL_PASSWORD
+            valueFrom:
+              configMapKeyRef:
+                name: mail
+                key: password
+          - name: MAIL_TARGET
+            valueFrom:
+              configMapKeyRef:
+                name: mail
+                key: target
         resources:
           requests:
             memory: "0.05Gi"
