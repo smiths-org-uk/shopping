@@ -1,20 +1,28 @@
 import {Router} from 'express';
-import itemService from '../services/item';
+import shoppingService from '../services/shopping';
 
 // eslint-disable-next-line new-cap
 const router = Router();
 
 router.route('/items')
     .get((req, res, next) => {
-      itemService.fetchAll()
+      shoppingService.fetchItems()
           .then(items => {
             res.send(items);
           });
     });
 
+router.route('/deliveryDate')
+    .get((req, res, next) => {
+      shoppingService.fetchDeliveryDate()
+          .then(deliveryDateObject => {
+            res.send(deliveryDateObject);
+          });
+    });
+
 router.route('/save')
     .put((req, res, next) => {
-      itemService.save(req.body)
+      shoppingService.save(req.body.deliveryDate, req.body.items)
           .then(() => {
             res.send();
           })
@@ -22,7 +30,7 @@ router.route('/save')
 
 router.route('/reset')
     .put((req, res, next) => {
-      itemService.reset()
+      shoppingService.reset()
           .then(() => {
             res.send();
           })

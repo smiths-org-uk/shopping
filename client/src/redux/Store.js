@@ -18,5 +18,6 @@ export const initialiseStore = () => {
 };
 
 const initialState = {
-  items: []
+  items: [],
+  deliveryDate: ""
 };

@@ -1,4 +1,7 @@
 {
+    "deliveryDate": {
+        "value": "someValue"
+    },
     "items": [
         {
             "title": "Bio Yoghurt (450g pot)",

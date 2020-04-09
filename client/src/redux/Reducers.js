@@ -1,13 +1,14 @@
 import { 
   SET_ITEMS, 
-  SET_ITEM } from './Actions';
+  SET_ITEM, 
+  SET_DELIVERY_DATE} from './Actions';
 
 export const rootReducer = (state, action) => {
   return {
-    items: itemReducer(state.items, action)
+    items: itemReducer(state.items, action),
+    deliveryDate: deliveryDateReducer(state.deliveryDate, action)
   };
 };
-
 
 export const itemReducer = (itemsState, action) => {
   let items = Object.assign([], itemsState);
@@ -22,4 +23,16 @@ export const itemReducer = (itemsState, action) => {
   }
 
   return items;
+};
+
+export const deliveryDateReducer = (deliveryDateState, action) => {
+  let deliveryDate = deliveryDateState;
+
+  switch (action.type) {
+    case SET_DELIVERY_DATE:
+      deliveryDate = action.deliveryDate;
+      break;
+  }
+
+  return deliveryDate;
 };

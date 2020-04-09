@@ -1,7 +1,7 @@
 # shopping
 
 ```sql
-create table shopping.items
+create table items
 (
     title      varchar(255) not null,
     quantity   varchar(20)  not null,
@@ -12,8 +12,15 @@ create table shopping.items
         unique (title)
 );
 
-alter table shopping.items
+alter table items
     add primary key (title);
+
+create table meta
+(
+    value varchar(30) not null,
+    id    varchar(30) not null
+        primary key
+);
 ```
 
 ```sql
@@ -66,6 +73,10 @@ INSERT INTO items VALUES ('Cif Cream Cleaner', '0', '', 3, 'cleaning');
 
 INSERT INTO items VALUES ('Other #1', '0', '', 4, 'other');
 INSERT INTO items VALUES ('Other #2', '0', '', 4, 'other');
+```
+
+```sql
+INSERT INTO meta (id, value) VALUES ('DELIVERY_DATE', '');
 ```
 
 ```sql

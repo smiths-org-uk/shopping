@@ -43,11 +43,24 @@ export default class Middleware {
     };
   }
 
-  static saveItems(items) {
+  static fetchDeliveryDate() {
     return (dispatch) => {
-      return httpCall('PUT', `${API_SERVER}/save`, items)
+      return httpCall('GET', `${API_SERVER}/deliveryDate`)
+          .then((response) => response.json().then((data) => {
+            dispatch(Actions.setDeliveryDate(data.value));
+          }))
+          .catch(() => {
+            alert("ERROR FETCHING DELIVERY DATE. Contact Graham.")
+          });
+    };
+  }
+
+  static save(items, deliveryDate) {
+    return (dispatch) => {
+      return httpCall('PUT', `${API_SERVER}/save`, {items, deliveryDate})
           .then(() => {
             dispatch(Middleware.fetchItems());
+            dispatch(Middleware.fetchDeliveryDate());
             alert("SHOPPING SAVED!");
           })
           .catch(() => {
@@ -56,11 +69,12 @@ export default class Middleware {
     };
   }
 
-  static resetItems() {
+  static reset() {
     return (dispatch) => {
       return httpCall('PUT', `${API_SERVER}/reset`)
           .then(() => {
             dispatch(Middleware.fetchItems());
+            dispatch(Middleware.fetchDeliveryDate());
             alert("SHOPPING RESET!");
           })
           .catch(() => {
