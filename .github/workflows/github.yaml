@@ -20,6 +20,5 @@ jobs:
       - run: npm test
       - run: npm run build
       - run: cd client && npm i
-      - run: cd client && npm i
       - run: cd client && npm test
       - run: cd client && npm run build
