@@ -54,23 +54,17 @@ spec:
             httpGet:
               port: 80
               path: /
-        - name: cloudsql-proxy
-          image: gcr.io/cloudsql-docker/gce-proxy:1.17
+        - name: cloud-sql-proxy
+          image: gcr.io/cloudsql-docker/gce-proxy:1.33.4-alpine
           command:
-            - "/cloud_sql_proxy"
-            - "-instances=harm-personal-projects:europe-west2:prod-mysql=tcp:3306"
-            - "-credential_file=/secrets/cloudsql/credentials.json"
+            - /cloud_sql_proxy
+            - -ip_address_types=PRIVATE
+            - -log_debug_stdout
+            - -enable_iam_login
+            - -instances=harm-personal-projects:europe-west2:prod-mysql=tcp:3306
           securityContext:
             runAsUser: 2
             allowPrivilegeEscalation: false
-          volumeMounts:
-            - name: shopping-cloudsql-proxy
-              mountPath: /secrets/cloudsql
-              readOnly: true
-      volumes:
-        - name: shopping-cloudsql-proxy
-          secret:
-            secretName: shopping-cloudsql-proxy
   strategy:
     type: RollingUpdate
     rollingUpdate:
