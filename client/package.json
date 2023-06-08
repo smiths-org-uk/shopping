@@ -12,9 +12,9 @@
     },
     "author": "Harmelodic",
     "devDependencies": {
-        "@babel/core": "7.22.1",
-        "@babel/preset-env": "7.22.4",
-        "@babel/preset-react": "7.22.3",
+        "@babel/core": "7.22.5",
+        "@babel/preset-env": "7.22.5",
+        "@babel/preset-react": "7.22.5",
         "babel-loader": "9.1.2",
         "compression-webpack-plugin": "10.0.0",
         "json-server": "0.17.3",
