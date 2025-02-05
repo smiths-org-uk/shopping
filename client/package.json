@@ -23,7 +23,7 @@
         "react-dom": "19.0.0",
         "redux": "5.0.1",
         "redux-thunk": "3.1.0",
-        "styled-components": "6.1.14",
+        "styled-components": "6.1.15",
         "webpack": "5.97.1",
         "webpack-cli": "6.0.1",
         "webpack-merge": "6.0.1"
